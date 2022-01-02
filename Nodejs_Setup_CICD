@@ -35,7 +35,7 @@ Click Save and Apply
 
 ``` sh 
 
-Git URL - https://github.com/Abhishek08/node-js-sample.git
+Git URL - https://emanohar25@bitbucket.org/emanohar25/sample_nodejs.git
 
 WebHook Connection URL - http://IPADDRESS/github-webhook/ (push)
 
@@ -68,7 +68,7 @@ docker run -d --name nodecontainer -p 5001:5000 nodeimage;
 ``` sh 
 FROM node:latest
 
-MAINTAINER Abhishek Modi 
+MAINTAINER Manohar 
 
 RUN echo "Tryin to build my first application"
 
