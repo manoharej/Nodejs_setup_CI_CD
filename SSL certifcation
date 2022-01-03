@@ -1,0 +1,20 @@
+# Follow below steps for SSL certification set up:
+1. Certificate manager in AWS
+2. Request certificate for Domain Name.
+	i. DNS Validation
+	ii. Email Validation
+3. I have choosen DN validation as Permission to change in DNS
+4. Add tags Name : Mynodejs app
+5. Review Certification send confirm
+6. Validation will be pending
+7. Manage DNS management
+Add C record: Copy the CName
+8. Check the status in AWSS certification Manager
+9. Navigate Route 53 check the status for route 53 hosted zone and it will take minimum 30min to propagate the certificate.
+10. Validation status would be success in step 6.
+11. Create load balancer configuration.
+12. Create cerification group and add https 
+13. target group
+14. Review all setting 
+15. Create load balancer
+16. Need to record set in Route 53 and save settings.
