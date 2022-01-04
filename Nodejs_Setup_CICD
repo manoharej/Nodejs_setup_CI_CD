@@ -1,12 +1,30 @@
 # Simple DevOps Project CI CD Using Node JS 
 
+# Pre-requisites:
+1. Jenkins Server
+2. Nodejs Server
+# Set up with Jenkins Application
+Manage Jenkins Plugins:
+1. Publish over ssh
+2. Nodejs
+3. Update the Server add details and Configuration tab and test connection
 
-##### Steps 1 - Install Node Js on Ubuntu Machine 
+# Make it ready Nodejs application
+1. Install docker and start Start the services
+2. Create dockeradmin user
+3. Install Nodejs
+4. Create a folder called Docker in /opt/docker and give owner permission to docker file for the user dockeradmin
+Follow the below steps
+
+##### Steps 1 - Install Node Js on Amazonlinux/Ubuntu Machine 
 
 ``` sh 
 
 sudo apt update
-
+amazon-linux-extras install epel -y
+yum install nodejs -y
+or 
+if it ubuntu follow below steps
 sudo apt install nodejs
 
 sudo apt install npm
@@ -23,9 +41,9 @@ Key -- define the private Key ( you will get from .pem while when you will open 
 
 ssh Server - 
 
-Name - define the name of the server.
+Name - define the name of the server. 
 HostName - Provide the IP address of your server.
-UserName - Provide the user name here ex. if we are using Ubuntu ec2 instance then username is ubuntu
+UserName - Provide the user name here ex. if we are using Ubuntu ec2 instance then username is ubuntu (docker admin)
 
 Click Save and Apply 
 
